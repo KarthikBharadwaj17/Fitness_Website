@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness Website</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(img/pexels-photo-28054.webp);
+            color:  black;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px
+        }
+        .left img{
+            width: 136px;
+            filter:invert(100%)
+        }
+        .left div{
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 29px;
+        }
+        .mid{
+            /* border: 2px solid yellow; */
+            display: block;
+            width: 39%;
+            margin: 20px auto;
+        }
+        .right{
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            right: 50px;
+            top: 20px;
+        }
+        .btn{
+            margin: 12px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 10px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: medium;
+            cursor: pointer;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .btn:hover{
+            background-color: rgb(110, 97, 97);
+        }
+
+        .navbar{
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 25px 10px;
+        }
+        .navbar li a:hover ,.navbar li a:active{
+        text-decoration: underline;
+        color: gray;
+        }
+        .container{
+            border: 2px solid white;
+            margin: 95px 70px;
+            padding: 60px 50px;
+            width: 33%;
+            border-radius: 29px;
+            color: white;
+        }
+        .form-group input{
+            text-align: center;
+            width: 40%;
+            padding: 6px 15px;
+            display: block;
+            margin: 6px auto;
+            border: 2px solid black;
+            font-family:'Nunito Sans', sans-serif;
+            border-radius: 15px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 33%;
+            margin: 25px auto;
+        }
+      
+    </style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/hand_with_a_dumbbell.jpg" alt="Gym_logo">
+           <div>My Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#"> About Us</a></li>
+                <li><a href="#">Fitness Calculator </a></li>
+                <li><a href="#"> Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Our Best Gym</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                 <input type="text" name="" placeholder="Enter your gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone Number">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="" placeholder="Enter your Email">
+                </div>
+        <button class="btn">Submit</button>
+    </div>
+    
+</body>
+</html>
